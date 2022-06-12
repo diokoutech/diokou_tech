@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diokou Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="landing">
+        <div class="menu animate__animated animate__pulse">
+            <h1 align="center" href="#" onclick="toggle()">
+                <i class="fa fa-close text-white"></i>
+            </h1>
+            <ul class="sousmenu" type="none">
+                <li class="animate__animated animate__fadeIn">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated animate__fadeIn">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated  animate__fadeIn animate__delay-3s">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated  animate__fadeIn animate__delay-3s">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated  animate__fadeIn animate__delay-4s">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated  animate__fadeIn animate__delay-4s">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+                <li class="animate__animated  animate__fadeIn animate__delay-4s">
+                    <h2> <a href="#"> Lorem, ipsum.</a> </h2>
+                </li>
+            </ul>
+        </div>
+        <header class="header">
+            <nav>
+                <span class="brand">
+                    <img src="img/logo.png" width="20%" height="20%" alt="logo DiokouTech" srcset="">
+                </span>
+                <ul type="none" class="social_media">
+                    <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"> <i class="fa-brands fa-github"></i> </li>
+                    <li> <a href="#"> <i class="fa-brands fa-twitter"></i> </li>
+                    <li><a href="#"> <i class="fa-brands fa-instagram"></i> </li>
+                </ul>
+
+                <a class="btn" title="Menu" href="#" onclick="toggle()">
+                    <h1> <i class="fa-solid fa-bars-staggered"></i> </h1>
+                </a>
+            </nav>
+            <!-- corsp header -->
+        </header>
+    </div>
+</body>
+<script>
+    function toggle() {
+        let menu = document.getElementsByClassName('menu')[0];
+        console.log('before ', menu.classList);
+        menu.classList.toggle('block');
+        console.log('after ', menu.classList);
+    }
+</script>
+
+</html>
