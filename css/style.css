@@ -8,7 +8,6 @@ html,body{
 }
 .landing{
     width: 100%;
-    min-width: 100%;
     background: white;
     height: 100vh;
     background: transparent;
@@ -19,7 +18,7 @@ html,body{
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
     z-index: 4 !important;
     transition: 2s all;
@@ -74,11 +73,25 @@ nav li:hover{
 .hide{
     display: none;
 }
+.mr-1{
+    margin-right: 10px;
+}
+.sousmenu li{
+   /* box-shadow: 2px 4px 3px white, 2px 2px 2px white ; */
+}
+.sousmenu li h2{
+    display: flex;
+    align-items: center;
+   box-shadow: 2px 4px 3px white, 2px 2px 2px white ;
+   transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) all;
+}
 .block{
     display: block;
 }
 .sousmenu{
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     text-align: center;
     margin: 0 auto;
     color: white !important;
