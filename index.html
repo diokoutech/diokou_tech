@@ -22,13 +22,10 @@
             </h1>
             <ul class="sousmenu" type="none">
                 <li class="animate__animated animate__fadeIn">
-                    <h2> <i class="fab fa-affiliatetheme mr-1"></i><a href="#services">Services</a> </h2>
+                    <h2> <i class="fab fa-affiliatetheme mr-1"></i><a onclick="toggle()" href="#services">Services</a> </h2>
                 </li>
                 <li class="animate__animated animate__fadeIn">
                     <h2><i class="fa-solid fa-layer-group mr-1"></i> <a href="#stack">Tech Stack</a> </h2>
-                </li>
-                <li class="animate__animated animate__fadeIn">
-                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a href="#formation">Formations</a> </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
                     <h2> <i class="fas fa-phone-square-alt mr-1"></i><a href="#contact">Contact</a> </h2>
@@ -37,7 +34,10 @@
                     <h2><i class="fas fa-briefcase mr-1"></i> <a href="#projet">Réalisations</a> </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2><i class="fas fa-language mr-1"></i><a href="#langue" >Langues</a> </h2>
+                    <h2><i class="fas fa-language mr-1"></i><a href="#langue">Langues</a> </h2>
+                </li>
+                <li class="animate__animated animate__fadeIn">
+                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a href="#formation">Formations</a> </h2>
                 </li>
             </ul>
         </div>
@@ -47,10 +47,13 @@
                     <img src="img/logo_Diokou.png" width="200" height="auto" alt="logo DiokouTech" srcset="">
                 </span>
                 <ul type="none" class="social_media">
-                    <li> <a href="#" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#" title="github"> <i class="fa-brands fa-github"></i> </li>
-                    <li> <a href="#" title="twitter"> <i class="fa-brands fa-twitter"></i> </li>
-                    <li><a href="#" title="instagram"> <i class="fa-brands fa-instagram"></i> </li>
+                    <li> <a target="_blank" href="https://www.linkedin.com/in/cheikhou-diokou/" title="linkedin"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/Diokou-Tech" title="github"> <i
+                                class="fa-brands fa-github"></i> </li>
+                    <li> <a target="_blank" href="https://twitter.com/Diokou_Tech" title="twitter"> <i
+                                class="fa-brands fa-twitter"></i> </li>
+                    <li><a target="_blank" href="#" title="instagram"> <i class="fa-brands fa-instagram"></i> </li>
                 </ul>
 
                 <a class="btn" title="Menu" href="#" onclick="toggle()">
@@ -58,23 +61,65 @@
                 </a>
             </nav>
             <!-- corsp header -->
-            <section>
-                <div>
-
+            <section class="flex  pageHeader justify-evenly items-center">
+                <div class="flex justify-center ">
+                    <h2> <img src="./img/profil.jpg" width="300" alt=""> </h2>
+                    <h1>
+                        Hi I'm Cheikhou Diokou</h1>
+                    <h1>Web Developer <small class="text-black">Full Stack</small></h1>
                 </div>
                 <div>
-
+                    <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, quibusdam.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eaque ad odit ipsa, error nihil
+                        architecto explicabo aperiam asperiores repudiandae!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolores dignissimos veritatis,
+                        ipsa perferendis hic ipsam!
+                    </h4>
                 </div>
             </section>
         </header>
+    </div>
+    <!-- services -->
+    <h1  class="titre flex justify-evenly items-center">
+        <img src="./img/services.svg" width="200" alt="">
+        <span>Ce que je peux vous offrir !</span>
+    </h1>
+    <div class="flex justify-evenly items-center" id="services">
+            <div class="card">
+                <h2>Solutions numériques</h2>
+                <ul>
+                    <li>Site Vitrine</li>
+                    <li>Site Web</li>
+                    <li>Application Web</li>
+                    <li>Apis Web</li>
+                    <li>Administratin de base de données</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>E-Marketing</h2>
+                <ul>
+                    <li>Communicatin digitale</li>
+                    <li>Rédaction de contenues</li>
+                    <li>Présence Web</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Prod audiovisuelle</h2>
+                <ul>
+                    <li>Publicité</li>
+                    <li>Cartes de membres</li>
+                    <li>Logos & flyers</li>
+                    <li>Affiches</li>
+                    <li>Maquette Web</li>
+                </ul>
+            </div>
     </div>
 </body>
 <script>
     function toggle() {
         let menu = document.getElementsByClassName('menu')[0];
-        console.log('before ', menu.classList);
         menu.classList.toggle('block');
-        console.log('after ', menu.classList);
     }
 </script>
 

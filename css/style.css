@@ -2,6 +2,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;    
 }
 .text-white{
     color: white;
@@ -30,7 +31,7 @@ html,body{
     background: white;
     position: absolute;
     width: 100%;
-    height: 100%;
+    min-height: 500px;
     z-index: 2;
     color: #C83142;
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
@@ -47,7 +48,8 @@ html,body{
     padding: 0px 10px;
     margin: 0 auto;
 }
-.brand{
+
+nav .brand{
     display: inline;
 }
 nav li a{
@@ -70,8 +72,25 @@ nav li:hover{
 .btn:hover{
     transform:scale(1.3) ;
 }
+.text-black{
+    color:black !important;
+}
 .hide{
     display: none;
+}
+.pageHeader{
+    min-height: 400px;
+    width: 90%;
+    margin: 0 auto;
+}
+.pageHeader>div{
+    width: 450px;
+    text-align: justify;
+}
+.pageHeader div h4{
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 5px;
 }
 .mr-1{
     margin-right: 10px;
@@ -99,5 +118,62 @@ nav li:hover{
 .sousmenu a{
     color: white !important;
     text-decoration: none;
+}
+.titre{
+    font-size: 40px;
+    background:#C83142;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.card{
+    width: 300px;
+    min-height:200px;
+    /* border-left: #C83142 5px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 4px 5px 4px #C83142;
+    transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) all;
+    border-radius: 10px;
+}
+.card:hover{
+    background: #C83142;
+    color:white;
+    transform: scale(1.1);
+}
+.card:hover h2{
+    color:white;
+}
+.card h2{
+    color:#C83142;
+    font-size: xx-large;
+}
+.card ul{
+    list-style-image: url("/img/logo.svg");
+    font-size: 25px;
+    line-height: 1.5;
+}
+/* utilities  */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.justify-evenly{
+    justify-content:space-evenly;
+}
+.justify-around{
+    justify-content:space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
 }
 /* MEDIA QUERIES */
