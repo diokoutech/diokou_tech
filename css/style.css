@@ -158,6 +158,17 @@ nav li:hover{
     font-size: 25px;
     line-height: 1.5;
 }
+.stack{
+    border-radius: 49% 51% 47% 53% / 30% 30% 70% 70% ;
+    width: auto;
+    border: #C83142 3px solid;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
 /* utilities  */
 .flex{
     display: flex;
