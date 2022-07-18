@@ -48,7 +48,15 @@ html,body{
     padding: 0px 10px;
     margin: 0 auto;
 }
-
+.profil{
+    border-radius: 50%;  
+    box-shadow: 4px 5px 4px wheat;
+    transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.profil:hover{
+    transform: scaleX(-1);
+    transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
 nav .brand{
     display: inline;
 }

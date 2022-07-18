@@ -26,19 +26,19 @@
                     </h2>
                 </li>
                 <li class="animate__animated animate__fadeIn">
-                    <h2><i class="fa-solid fa-layer-group mr-1"></i> <a href="#stack">Tech Stack</a> </h2>
+                    <h2><i class="fa-solid fa-layer-group mr-1"></i> <a onclick="toggle()" href="#stack">Tech Stack</a> </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2> <i class="fas fa-phone-square-alt mr-1"></i><a href="#contact">Contact</a> </h2>
+                    <h2> <i class="fas fa-phone-square-alt mr-1"></i><a onclick="toggle()" href="#contact">Contact</a> </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2><i class="fas fa-briefcase mr-1"></i> <a href="#projet">Réalisations</a> </h2>
+                    <h2><i class="fas fa-briefcase mr-1"></i> <a onclick="toggle()" href="#projet">Réalisations</a> </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2><i class="fas fa-language mr-1"></i><a href="#langue">Langues</a> </h2>
+                    <h2><i class="fas fa-language mr-1"></i><a onclick="toggle()" href="#langue">Langues</a> </h2>
                 </li>
                 <li class="animate__animated animate__fadeIn">
-                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a href="#formation">Formations</a> </h2>
+                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a onclick="toggle()" href="#formation">Formations</a> </h2>
                 </li>
             </ul>
         </div>
@@ -64,7 +64,7 @@
             <!-- corsp header -->
             <section class="flex  pageHeader justify-evenly items-center">
                 <div class="flex justify-center ">
-                    <h2> <img src="./img/profil.jpg" width="300" alt=""> </h2>
+                    <h2> <img src="./img/profil.jpg" class="profil" width="300" alt="Photo de Cheikhou" title="Photo de Cheikhou"> </h2>
                     <h1>
                         Hi I'm Cheikhou Diokou</h1>
                     <h1>Web Developer <small class="text-black">Full Stack</small></h1>
@@ -121,7 +121,10 @@
         <img src="./img/stack.svg" width="200" alt="">
         <span>Mon plat préféré !</span>
     </h1>
-    <div class="flex justify-evenly items-center" id="services">
+    <p class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum, quisquam, excepturi ratione nesciunt minima voluptatibus vel accusamus deleniti fugiat amet earum, fugit rerum deserunt sequi unde qui? Fugiat, asperiores!
+    </p>
+    <div class="flex justify-evenly items-center" id="stack">
         <div class="stack">
             <img src="/img/logo_php.jpg" width="80px" height="80px" title="Php" alt="">
         </div>
@@ -148,6 +151,7 @@
             <img src="/img/mysql.png" width="80px" height="80px" title="Mysql" alt="">
         </div>
     </div>
+    <!-- buttons haut  -->
     <footer>
         <h5 class="footer">&copy; Diokou Cheikhou - 2022</h5>
     </footer>
