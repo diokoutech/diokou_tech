@@ -10,14 +10,14 @@ html,body{
 .landing{
     width: 100%;
     background: white;
-    height: 100vh;
+    min-height: 400px;
     background: transparent;
 }
 .menu{
     border: 2px solid #C83142;
     background: #C83142;
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
@@ -29,9 +29,8 @@ html,body{
 .header{
     border:2px solid white;
     background: white;
-    position: absolute;
+    position: relative;
     width: 100%;
-    min-height: 500px;
     z-index: 2;
     color: #C83142;
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
@@ -52,6 +51,16 @@ html,body{
     border-radius: 50%;  
     box-shadow: 4px 5px 4px wheat;
     transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.desc{
+    font-size: large;
+    font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.desc hr{
+    border:3px solid #C83142;
+    border-radius: 0px 10px;
 }
 .profil:hover{
     transform: scaleX(-1);
@@ -176,6 +185,7 @@ nav li:hover{
     align-items: center;
     justify-content: center;
     padding: 15px;
+    margin:05px;
 }
 /* utilities  */
 .flex{

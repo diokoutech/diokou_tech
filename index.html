@@ -12,6 +12,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,28 +27,32 @@
                     </h2>
                 </li>
                 <li class="animate__animated animate__fadeIn">
-                    <h2><i class="fa-solid fa-layer-group mr-1"></i> <a onclick="toggle()" href="#stack">Tech Stack</a> </h2>
+                    <h2><i class="fa-solid fa-layer-group mr-1"></i> <a onclick="toggle()" href="#stack">Tech Stack</a>
+                    </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2> <i class="fas fa-phone-square-alt mr-1"></i><a onclick="toggle()" href="#contact">Contact</a> </h2>
+                    <h2> <i class="fas fa-phone-square-alt mr-1"></i><a onclick="toggle()" href="#contact">Contact</a>
+                    </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
-                    <h2><i class="fas fa-briefcase mr-1"></i> <a onclick="toggle()" href="#projet">Réalisations</a> </h2>
+                    <h2><i class="fas fa-briefcase mr-1"></i> <a onclick="toggle()" href="#projet">Réalisations</a>
+                    </h2>
                 </li>
                 <li class="animate__animated  animate__fadeIn">
                     <h2><i class="fas fa-language mr-1"></i><a onclick="toggle()" href="#langue">Langues</a> </h2>
                 </li>
                 <li class="animate__animated animate__fadeIn">
-                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a onclick="toggle()" href="#formation">Formations</a> </h2>
+                    <h2> <i class="fas fa-graduation-cap mr-1"></i><a onclick="toggle()"
+                            href="#formation">Formations</a> </h2>
                 </li>
             </ul>
         </div>
         <header class="header">
             <nav>
                 <span class="brand">
-                    <img src="img/logo_Diokou.png" width="200" height="auto" alt="logo DiokouTech" srcset="">
+                    <img src="img/logo_Diokou.png" width="150px" height="auto" alt="logo DiokouTech" srcset="">
                 </span>
-                <ul type="none" class="social_media">
+                <ul type="none">
                     <li> <a target="_blank" href="https://www.linkedin.com/in/cheikhou-diokou/" title="linkedin"><i
                                 class="fa-brands fa-linkedin-in"></i></a></li>
                     <li><a target="_blank" href="https://github.com/Diokou-Tech" title="github"> <i
@@ -63,20 +68,28 @@
             </nav>
             <!-- corsp header -->
             <section class="flex  pageHeader justify-evenly items-center">
-                <div class="flex justify-center ">
-                    <h2> <img src="./img/profil.jpg" class="profil" width="300" alt="Photo de Cheikhou" title="Photo de Cheikhou"> </h2>
-                    <h1>
-                        Hi I'm Cheikhou Diokou</h1>
-                    <h1>Web Developer <small class="text-black">Full Stack</small></h1>
+                <div class="flex justify-center animate__animated animate__fadeInLeft ">
+                    <h2> <img src="./img/profil.jpg" class="profil" width="300" alt="Photo de Cheikhou"
+                            title="Photo de Cheikhou"> </h2>
+                    <h1>Hi I'm Web Developer <small class="text-black">Full Stack</small></h1>
+                    <h1>Travail - Discipline - Créativité</h1>
                 </div>
-                <div>
-                    <h4>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, quibusdam.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eaque ad odit ipsa, error nihil
-                        architecto explicabo aperiam asperiores repudiandae!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dolores dignissimos veritatis,
-                        ipsa perferendis hic ipsam!
-                    </h4>
+                <div class="desc animate__animated animate__fadeInRight">
+                    <p>
+                        DIOKOU Cheikhou de mon vrai nom, Zola mon surnom depuis tout petit. Enfant j'ai toujours été
+                        passionné des nouvelles technologies et du numérique.
+                        Depuis le collège j'ai toujours été persuadé que le futur dépend du numérique et de ce qu'on
+                        fait de cet outil si précieux.
+                    </p>
+                    <hr width="60">
+                    <p>
+                        DIOKOU Cheikhou by my real name, Zola my nickname since childhood. As a child, I was always
+                        passionate about new technologies and digital.
+                        Since college I have always been convinced that the future depends on digital technology and
+                        what we do with this precious tool.
+                    </p>
+                    <span>#CodingForBetterLife</span> <span>#AspireFarther</span>
+
                 </div>
             </section>
         </header>
@@ -87,7 +100,7 @@
         <span>Ce que je peux vous offrir !</span>
     </h1>
     <div class="flex justify-evenly items-center" id="services">
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn">
             <h2>Solutions numériques</h2>
             <ul>
                 <li>Site Vitrine</li>
@@ -97,7 +110,7 @@
                 <li>Administratin de base de données</li>
             </ul>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn animate__delay-2s">
             <h2>E-Marketing</h2>
             <ul>
                 <li>Communicatin digitale</li>
@@ -105,7 +118,7 @@
                 <li title="test">Présence Web</li>
             </ul>
         </div>
-        <div class="card">
+        <div class="card card animate__animated animate__fadeIn animate__delay-3s">
             <h2>Prod audiovisuelle</h2>
             <ul>
                 <li>Publicité</li>
@@ -122,7 +135,9 @@
         <span>Mon plat préféré !</span>
     </h1>
     <p class="container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum, quisquam, excepturi ratione nesciunt minima voluptatibus vel accusamus deleniti fugiat amet earum, fugit rerum deserunt sequi unde qui? Fugiat, asperiores!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum, quisquam, excepturi ratione nesciunt
+        minima voluptatibus vel accusamus deleniti fugiat amet earum, fugit rerum deserunt sequi unde qui? Fugiat,
+        asperiores!
     </p>
     <div class="flex justify-evenly items-center" id="stack">
         <div class="stack">
@@ -151,11 +166,45 @@
             <img src="/img/mysql.png" width="80px" height="80px" title="Mysql" alt="">
         </div>
     </div>
-    <!-- buttons haut  -->
+    <!-- Projet -->
+    <h1 class="titre flex justify-evenly items-center">
+        <img src="./img/projet.svg" width="200" alt="">
+        <span>Mes Réalisations </span>
+    </h1>
+    <div class="flex justify-evenly items-center" id="services">
+        <div class="card">
+            <h2>Niama App</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus expedita dolores voluptatum ea delectus. Consequatur, ut eius rem temporibus nihil unde? Facere aut a corporis reiciendis saepe id labore.
+                Eos in corrupti optio expedita. Repellat unde laudantium doloribus deserunt ipsum debitis culpa dolor similique sequi provident, quam enim in laborum ab deleniti reiciendis qui architecto, possimus repudiandae, soluta commodi!
+                Dolorem totam voluptatum inventore, optio reprehenderit nostrum unde perferendis, excepturi odit labore dignissimos enim consectetur non, omnis alias libero aliquid quas esse. Asperiores at, nostrum officiis perferendis eveniet quae eligendi!
+            </p>
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </div>
+    <!-- contact -->
+    <h1 class="titre flex justify-evenly items-center">
+        <img src="./img/contact.svg" width="200" alt="">
+        <span>Me contacter !</span>
+    </h1>
+    <div class="flex justify-evenly items-center" id="services">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </div>
     <footer>
         <h5 class="footer">&copy; Diokou Cheikhou - 2022</h5>
     </footer>
 </body>
+<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     function toggle() {
         let menu = document.getElementsByClassName('menu')[0];
