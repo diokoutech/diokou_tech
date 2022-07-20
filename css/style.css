@@ -3,6 +3,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;    
+    scroll-behavior: smooth;
 }
 .text-white{
     color: white;
@@ -37,9 +38,10 @@ html,body{
 }
 .header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px 20px;
 }
 .header nav li{
     float:left;
@@ -69,8 +71,8 @@ html,body{
 nav .brand{
     display: inline;
 }
-nav li a{
-    color: #C83142 !important;
+.card li a{
+    /* color: #C83142 !important; */
     font-size: x-large;
 }
 nav li:hover{
@@ -146,7 +148,7 @@ nav li:hover{
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
 }
 .card{
-    width: 300px;
+    width: 305px;
     min-height:200px;
     /* border-left: #C83142 5px solid; */
     display: flex;
@@ -157,6 +159,14 @@ nav li:hover{
     box-shadow: 4px 5px 4px #C83142;
     transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) all;
     border-radius: 10px;
+}
+.up_scroll{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    color: black;
+    font-size: 25px;
 }
 .card:hover{
     background: #C83142;
