@@ -76,12 +76,6 @@
                     </p>
                     <hr width="60">
                     <p>
-                        DIOKOU Cheikhou by my real name, Zola my nickname since childhood. As a child, I was always
-                        passionate about new technologies and digital.
-                        Since college I have always been convinced that the future depends on digital technology and
-                        what we do with this precious tool.
-                    </p>
-                    <p style="color:black">
                         <span title="Sonatel Academy">#CodingForBetterLife</span>
                         <span title="Edacy">#AspireFarther</span>
                     </p>
@@ -183,10 +177,24 @@
             </p>
         </div>
         <div class="card">
-
+            <h2>Nekk Dev</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At id enim odio repellendus provident natus sunt reprehenderit? Consectetur ad corrupti suscipit officiis quam. Error iste quae voluptatem sint dicta doloremque.
+                Eum, praesentium! Quasi tempora quis ratione perspiciatis dicta nihil amet libero hic quod eos, architecto optio dolorem impedit iusto non porro sint, enim repudiandae! Molestias voluptates iste quisquam qui laborum.
+                Culpa modi perspiciatis odit aut libero tenetur architecto nulla, vitae sunt, exercitationem odio explicabo unde non quidem vero necessitatibus quae velit sed blanditiis quasi distinctio, eius a voluptatum deleniti? Aut!
+            </p>
+            <p>
+                <span><a href="#"> <i class="fa-solid fa-link"></i> </a></span>
+                
+            </p>
         </div>
         <div class="card">
-
+            <h2>Lemgui</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque amet quis aut voluptatem eum, perferendis corporis placeat, quisquam fugiat distinctio earum esse temporibus enim rem illo quos obcaecati commodi.
+                Maxime dolorum voluptates praesentium eius fuga illum esse ducimus modi quasi. Exercitationem consectetur nesciunt tenetur ducimus iste esse animi ea aut fuga hic maiores, iure, accusamus tempora tempore consequuntur aspernatur.
+                Eum iure eligendi similique? Nulla facere cumque dicta rerum, porro atque non voluptates possimus natus deleniti optio consectetur corporis accusantium obcaecati et error. Corporis hic voluptas voluptates sapiente dolorum fugiat?
+            </p>
         </div>
     </div>
     <!-- contact -->
@@ -208,15 +216,13 @@
             </ul>
         </div>
         <div class="card">
-            <H2>Personnell</H2>
-            <ul>
-                <li> <i class="fa fa-message"></i> diokoutech@gmail.com </li>
-                <li><i class="fa fa-phone"> +221 76 576 54 04</i></li>
-            </ul>
+            <H2>Perso</H2>
+                <p> <i class="fa-solid fa-envelope"></i> :  diokoutech@gmail.com </p>
+                <p><i class="fa fa-phone"> : +221 76 576 54 04</i></p>
         </div>
     </div>
     <!-- button up scroll -->
-    <a href="#" class="up_scroll" title="vers le haut"><i class="fa-solid fa-up-long"></i></a>
+    <a href="#" class="up_scroll hide animate__animated animate__fadeIn" title="vers le haut"><i class="fa-solid fa-up-long"></i></a>
     <footer>
         <h5 class="footer">&copy; Diokou Cheikhou - 2022</h5>
     </footer>
@@ -226,6 +232,24 @@
     function toggle() {
         let menu = document.getElementsByClassName('menu')[0];
         menu.classList.toggle('block');
+    }
+    body = document.body;
+    let hTotal = body.scrollHeight;
+    // console.log(parseInt(h));
+    body.addEventListener('scroll',function(){
+        console.log('scrooll');
+    });
+    window.onscroll = function(){ FunctionScroll() }
+
+    function FunctionScroll(){
+        let hauteurScroll = window.pageYOffset;
+        console.log(hauteurScroll);
+        let up = document.getElementsByClassName('up_scroll')[0];
+        if(hauteurScroll < 500){
+        up.classList.add('hide');
+        }else{
+        up.classList.remove('hide');
+        }
     }
 </script>
 
