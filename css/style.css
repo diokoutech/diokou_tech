@@ -23,7 +23,8 @@ html,body{
     height: 100vh;
     font-family: 'Kdam Thmor Pro', 'Trebuchet MS', 'Lucida Sans Unicode';
     z-index: 4 !important;
-    transition: 2s all;
+    /* transition: 2s all; */
+   -prefix-animation: slide 1s ease 3.5s forwards;
     border-radius: 1% 5% 1% 5% / 3% 3% 7% 7% ;
     display: none;
 }
@@ -64,9 +65,17 @@ html,body{
     border:3px solid #C83142;
     border-radius: 0px 10px;
 }
+.desc::first-letter{
+    font-size: 30px;
+    color: #C83142;
+    font-weight: bold;
+}
 .profil:hover{
     transform: scaleX(-1);
     transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+cite{
+    line-height: 2;
 }
 nav .brand{
     display: inline;
@@ -96,6 +105,7 @@ nav li:hover{
 }
 .hide{
     display: none;
+    transition: 1.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .pageHeader{
     min-height: 400px;
@@ -185,6 +195,17 @@ nav li:hover{
     font-size: 25px;
     line-height: 1.5;
 }
+.card>p{
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5;
+}
+.card span{
+    width: 50px;
+    display: block;
+    color:black;
+    text-align: center;
+}
 .stack{
     border-radius: 49% 51% 47% 53% / 30% 30% 70% 70% ;
     width: auto;
@@ -195,7 +216,7 @@ nav li:hover{
     align-items: center;
     justify-content: center;
     padding: 15px;
-    margin:05px;
+    margin:10px;
 }
 /* utilities  */
 .flex{
@@ -224,3 +245,9 @@ nav li:hover{
     align-items: center;
 }
 /* MEDIA QUERIES */
+#main-image{
+    height: 0;
+    overflow: hidden;
+    background: red;
+   -prefix-animation: slide 1s ease 3.5s forwards;
+}
