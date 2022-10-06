@@ -109,8 +109,13 @@ nav li:hover{
 }
 .pageHeader{
     min-height: 400px;
-    width: 90%;
+    width: 100%;
+    padding: 0px 10px;
     margin: 0 auto;
+    /* background-image: url('./../img/header_developer.jpeg') !important; */
+}
+img{
+    object-fit: contain !important;
 }
 .pageHeader>div{
     width: 450px;
@@ -249,5 +254,5 @@ nav li:hover{
     height: 0;
     overflow: hidden;
     background: red;
-   -prefix-animation: slide 1s ease 3.5s forwards;
+    animation: slide 1s ease 3.5s forwards;
 }
