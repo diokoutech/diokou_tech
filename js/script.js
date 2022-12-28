@@ -19,3 +19,4 @@ function FunctionScroll(){
     up.classList.remove('hide');
     }
 }
+AOS.init();
